@@ -16,7 +16,7 @@
             <div class="logo">Bartholomew Owuor</div>
 
             <nav class="rightnav">
-                <ul class="nav-links">
+                <ul class="nav-links" id="menuItems">
                     <li><a href="#">Home</a> </li>
                     <li><a href="#about">About</a> </li>
                     <li><a href="#portfolio">Portfolio</a> </li>
@@ -24,6 +24,12 @@
                     <li><a href="#contact">Contact</a> </li>
                 </ul>
             </nav>
+
+            <!--close & Open button-->
+            <div class="menu-icon" onclick="menuToggle()">
+                <img class="hamburger-img" src="https://via.placeholder.com/35" alt="html" width="25px">
+                <img class="cross-img" src="https://via.placeholder.com/35" alt="html" width="22px">
+            </div>
         </div>
 
         <!--Hero Section-->
@@ -35,13 +41,222 @@
                     <h1>Web Developer, HTML Email Development, Marketing</h1>
 
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere earum quo vero, exercitationem perferendis dolorem alias iusto minus aliquam ipsam temporibus rem corrupti fuga voluptates aperiam laborum aliquid vitae eligendi?</p>
+
+                    <div class="buttons">
+                        <button class="btn1">Download CV</button>
+                        <button class="btn2">Contact Me</button>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <img src="" alt="">
+                    <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="main image">
                 </div>
             </div>
+
+            <div class="skills">
+                <p>Tech Skills</p>
+                <div class="logos">
+                    <ul>
+                        <li><img src="https://via.placeholder.com/35"" alt="html"></li>
+                        <li><img src="https://via.placeholder.com/35"" alt="html"></li>
+                        <li><img src="https://via.placeholder.com/35"" alt="html"></li>
+                        <li><img src="https://via.placeholder.com/35"" alt="html"></li>
+                        <li><img src="https://via.placeholder.com/35"" alt="html"></li>
+                    </ul>
+                </div>
+            </div> 
+
           </div>  
         </div>
-    </div>    
+    </div>   
+    
+    <!--About-->
+    <div class="about" id="about">
+        <div class="about-img">
+            <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="about-img">
+        </div>
+
+        <div>
+            <div class="about-content">
+                <h2 class="heading">About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minus magnam architecto nemo ad eum adipisci deleniti. Veniam voluptatibus suscipit, aliquam eos vitae, mollitia nobis quibusdam, earum sequi commodi impedit?</p>
+            </div>
+
+            <div class="skill-container">
+                <div class="skills1">
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills1">
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills1">
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills1">
+                    <div class="skill">
+                        <div class="skill-name">ReactJs</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ************ Portfolio ********-->
+
+    <div class="portfolio" id="portfolio">
+        <h2 class="heading">Portfolio</h2>
+
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="pro1">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="pro2">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="pro3">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="pro4">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="pro5">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="pro6">
+                <div class="portfolio-layer">
+                    <h4>Web design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ********Services*******-->
+
+    <div class="service-container" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="service-row">
+
+            <div class="service">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="serv1">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="service">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="serv2">
+                <h3>HTML Email Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="service">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="serv3">
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="service">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="serv4">
+                <h3>Video Editing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="service">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="serv5">
+                <h3>SEO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="service">
+                <img src="https://github.com/johannejoshua/Portfolio/blob/main/images/meo.JPG?raw=true" alt="serv6">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+    <!--JavaScript-->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        var hamburgerImg = document.querySelector(".hamburger-img");
+        var crossImg = document.querySelector(".cross-img");
+
+        menuItems.style.maxHeight = "0px";
+
+        function menuToggle(){
+            if(menuItems.style.maxHeight == "0px") {
+            menuItems.style.maxHeight = "200px";
+            hamburgerImg.style.display = "none";
+            crossImg.style.display = "inline-block";
+            } else {
+                menuItems.style.maxHeight = "0px";
+            hamburgerImg.style.display = "inline-block";
+            crossImg.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
