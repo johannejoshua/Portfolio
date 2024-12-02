@@ -290,15 +290,15 @@
 
     <!-- ******Responsive Services **** -->
 
-    <div class="contact-form-container" id="contact">
+    <div class="contact-form-container">
         <h2 class="heading">Contact Me</h2>
 
-        <form>
+        <form id="contact">
             <input type="text" id="name" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Email Address" size="30" required>
+            <input type="email" id="email" placeholder="Email Address" size="30" required>
 
-            <textarea id="subject" placeholder="Message" style="height: 200px;"></textarea>
+            <textarea type="subject" id="message" placeholder="Message" style="height: 200px;"></textarea>
 
             <input type="submit" value="send">
         </form>
@@ -373,7 +373,7 @@
 <script>
     // Initialize EmailJS
     (function() {
-        emailjs.init("public_xHVQh3NVzCjNz5694"); // Replace with your actual Public Key
+        emailjs.init("xHVQh3NVzCjNz5694"); // Replace with your actual Public Key
     })();
 
     // Form Submission Logic
@@ -381,7 +381,7 @@
         const contactForm = document.getElementById('contact');
         contactForm.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent default form submission behavior
-            emailjs.sendForm('service_imwlhm8', 'contact_form', this)
+            emailjs.sendForm('service_j4c4mcd', 'contact', contact)
                 .then(() => {
                     alert('Message sent successfully!');
                 }, (error) => {
