@@ -384,6 +384,9 @@
             emailjs.sendForm('service_j4c4mcd', 'contact', contact)
                 .then(() => {
                     alert('Message sent successfully!');
+
+                    // Reset the form fields
+                    contactForm.reset();
                 }, (error) => {
                     console.error('Failed to send message:', error);
                     alert('Failed to send message. Please try again later.');
